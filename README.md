@@ -1,4 +1,4 @@
-﻿# 尚硅谷租房平台 — 智能客服集成方案
+﻿# 智能租房平台
 
 > 基于 Spring Boot + Vue 3 + Python AI 的全栈租房管理平台，集成 ReAct Agent 智能客服与 RAG 知识库问答系统。
 
