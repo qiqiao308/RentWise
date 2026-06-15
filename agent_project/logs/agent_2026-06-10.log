@@ -1,0 +1,74 @@
+2026-06-10 15:10:37,323 - agent - INFO - redis_handler.py:28 - [Redis] 连接成功
+2026-06-10 15:10:37,329 - agent - INFO - metrics.py:19 - [Metrics] Redis 连接成功, 统计数据持久化到 Redis
+2026-06-10 15:13:16,699 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-10 15:13:16,701 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] HumanMessage |租房押金会是多少)
+2026-06-10 15:13:18,473 - agent - INFO - middleware.py:21 - [tool monitor]执行工具 rag_summarize 
+2026-06-10 15:13:18,474 - agent - INFO - middleware.py:22 - [tool monitor]执行工具 {'query': '租房押金标准金额'} 
+2026-06-10 15:13:20,532 - agent - INFO - rag_service.py:74 - [RAG缓存] 结果已缓存, TTL=3600s: 租房押金标准金额
+2026-06-10 15:13:20,538 - agent - INFO - middleware.py:27 - [tool monitor]工具 rag_summarize 调用成功, 耗时 2064.71ms 
+2026-06-10 15:13:20,542 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-10 15:13:20,542 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] ToolMessage |租房押金通常为1至3个月租金。)
+2026-06-10 15:13:23,690 - agent - INFO - api_server.py:144 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-10 15:14:07,524 - agent - INFO - api_server.py:120 - [Agent缓存] 命中缓存: 租房押金会是多少...
+2026-06-10 15:14:23,896 - agent - INFO - api_server.py:120 - [Agent缓存] 命中缓存: 租房押金会是多少...
+2026-06-10 15:14:39,360 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-10 15:14:39,360 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] HumanMessage |退房流程是什么)
+2026-06-10 15:14:40,610 - agent - INFO - middleware.py:21 - [tool monitor]执行工具 rag_summarize 
+2026-06-10 15:14:40,610 - agent - INFO - middleware.py:22 - [tool monitor]执行工具 {'query': '退房流程'} 
+2026-06-10 15:14:42,738 - agent - INFO - rag_service.py:74 - [RAG缓存] 结果已缓存, TTL=3600s: 退房流程
+2026-06-10 15:14:42,739 - agent - INFO - middleware.py:27 - [tool monitor]工具 rag_summarize 调用成功, 耗时 2129.30ms 
+2026-06-10 15:14:42,743 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-10 15:14:42,744 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] ToolMessage |参考资料中未提及退房流程相关内容。)
+2026-06-10 15:14:44,341 - agent - INFO - middleware.py:21 - [tool monitor]执行工具 rag_summarize 
+2026-06-10 15:14:44,342 - agent - INFO - middleware.py:22 - [tool monitor]执行工具 {'query': '租房退租指南 退房步骤'} 
+2026-06-10 15:14:48,120 - agent - INFO - rag_service.py:74 - [RAG缓存] 结果已缓存, TTL=3600s: 租房退租指南 退房步骤
+2026-06-10 15:14:48,121 - agent - INFO - middleware.py:27 - [tool monitor]工具 rag_summarize 调用成功, 耗时 3779.85ms 
+2026-06-10 15:14:48,126 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 5条信息 
+2026-06-10 15:14:48,126 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] ToolMessage |参考资料中未提供具体的退房步骤或退租指南内容，仅提及可提供“退租沟通话术范本”，以及涉及押金纠纷的处理途径（如调解、投诉渠道和诉讼准备材料）。关于退房流程本身，无明确步骤说明。)
+2026-06-10 15:14:49,225 - agent - INFO - api_server.py:144 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-10 15:15:12,736 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-10 15:15:12,736 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] HumanMessage |给我生成我的使用报告)
+2026-06-10 15:15:14,738 - agent - INFO - middleware.py:21 - [tool monitor]执行工具 get_user_id 
+2026-06-10 15:15:14,738 - agent - INFO - middleware.py:22 - [tool monitor]执行工具 {} 
+2026-06-10 15:15:14,740 - agent - INFO - middleware.py:27 - [tool monitor]工具 get_user_id 调用成功, 耗时 1.78ms 
+2026-06-10 15:15:14,746 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-10 15:15:14,746 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] ToolMessage |1001)
+2026-06-10 15:15:16,052 - agent - INFO - middleware.py:21 - [tool monitor]执行工具 get_current_month 
+2026-06-10 15:15:16,053 - agent - INFO - middleware.py:22 - [tool monitor]执行工具 {} 
+2026-06-10 15:15:16,055 - agent - INFO - middleware.py:27 - [tool monitor]工具 get_current_month 调用成功, 耗时 2.82ms 
+2026-06-10 15:15:16,058 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 5条信息 
+2026-06-10 15:15:16,058 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] ToolMessage |2025-04)
+2026-06-10 15:15:17,491 - agent - INFO - middleware.py:21 - [tool monitor]执行工具 fill_context_for_report 
+2026-06-10 15:15:17,492 - agent - INFO - middleware.py:22 - [tool monitor]执行工具 {} 
+2026-06-10 15:15:17,492 - agent - INFO - middleware.py:27 - [tool monitor]工具 fill_context_for_report 调用成功, 耗时 2.46ms 
+2026-06-10 15:15:17,499 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 7条信息 
+2026-06-10 15:15:17,500 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] ToolMessage |fill_context_for_report已调用)
+2026-06-10 15:15:19,912 - agent - INFO - middleware.py:21 - [tool monitor]执行工具 fetch_external_data 
+2026-06-10 15:15:19,912 - agent - INFO - middleware.py:22 - [tool monitor]执行工具 {'user_id': '1001', 'month': '2025-04'} 
+2026-06-10 15:15:19,917 - agent - INFO - middleware.py:27 - [tool monitor]工具 fetch_external_data 调用成功, 耗时 4.54ms 
+2026-06-10 15:15:19,925 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 9条信息 
+2026-06-10 15:15:19,926 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] ToolMessage |{"features": "65㎡一居 | 单身白领 | 月付", "efficiency": "工作调动:待确认\\n可能需要换租\\n月租金:3500元", "consumabbles": "合同剩余:8个月\\n违约金条款:待查\\n灵活转租:可协商", "comparison": "换租需求预警:黄色", "time": "2025-04"})
+2026-06-10 15:15:22,589 - agent - INFO - middleware.py:21 - [tool monitor]执行工具 rag_summarize 
+2026-06-10 15:15:22,589 - agent - INFO - middleware.py:22 - [tool monitor]执行工具 {'query': '工作调动换租流程与注意事项'} 
+2026-06-10 15:15:29,659 - agent - INFO - rag_service.py:74 - [RAG缓存] 结果已缓存, TTL=3600s: 工作调动换租流程与注意事项
+2026-06-10 15:15:29,660 - agent - INFO - middleware.py:27 - [tool monitor]工具 rag_summarize 调用成功, 耗时 7071.31ms 
+2026-06-10 15:15:29,668 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 11条信息 
+2026-06-10 15:15:29,669 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] ToolMessage |工作调动换租时，需注意以下流程与事项：核对房东身份及房产证，若为二房东须确认原合同允许转租；保留付款凭证、聊天记录和影像资料作为证据；预估总成本，包括押金（1-3个月租金）、首月租金、中介费及水电气网物业等月度费用；关注电费是否按商用标准、是否独立电表、是否含公摊；入住后如遇设备损坏，应与房东明确维修时限；处理邻里纠纷（如噪音、漏水）可依标准流程沟通；发生租金或押金争议时，可通过居委会、街道司法所调解，或拨打12345、向住建委投诉，必要时准备材料提起诉讼；建议使用标准催修函和退租话术范本；跨城市换租宜先短租再长租，避免盲租。)
+2026-06-10 15:15:31,345 - agent - INFO - middleware.py:21 - [tool monitor]执行工具 rag_summarize 
+2026-06-10 15:15:31,345 - agent - INFO - middleware.py:22 - [tool monitor]执行工具 {'query': '租房违约金条款与转租规定'} 
+2026-06-10 15:15:34,088 - agent - INFO - rag_service.py:74 - [RAG缓存] 结果已缓存, TTL=3600s: 租房违约金条款与转租规定
+2026-06-10 15:15:34,090 - agent - INFO - middleware.py:27 - [tool monitor]工具 rag_summarize 调用成功, 耗时 2745.21ms 
+2026-06-10 15:15:34,095 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 13条信息 
+2026-06-10 15:15:34,095 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] ToolMessage |租房合同中应明确提前解约条件、违约赔偿标准及转租权限。常见陷阱包括押金不退还的灰色条款、模糊的维修责任约定，以及合同未盖章或房东身份不明等问题。)
+2026-06-10 15:15:52,659 - agent - INFO - api_server.py:144 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-10 15:16:05,572 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-10 15:16:05,573 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] HumanMessage |维修责任怎么划分)
+2026-06-10 15:16:07,460 - agent - INFO - middleware.py:21 - [tool monitor]执行工具 rag_summarize 
+2026-06-10 15:16:07,460 - agent - INFO - middleware.py:22 - [tool monitor]执行工具 {'query': '维修责任划分'} 
+2026-06-10 15:16:10,299 - agent - INFO - rag_service.py:74 - [RAG缓存] 结果已缓存, TTL=3600s: 维修责任划分
+2026-06-10 15:16:10,300 - agent - INFO - middleware.py:27 - [tool monitor]工具 rag_summarize 调用成功, 耗时 2840.01ms 
+2026-06-10 15:16:10,302 - agent - INFO - middleware.py:44 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-10 15:16:10,302 - agent - DEBUG - middleware.py:45 - [log_beefore_mode] ToolMessage |租房合同中应明确维修责任划分，属于常见关键条款之一；设备损坏时，租客可与房东交涉维修时限，并可参考标准催修函进行沟通。)
+2026-06-10 15:16:18,678 - agent - INFO - api_server.py:144 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-10 15:28:00,412 - agent - WARNING - redis_handler.py:33 - [Redis] 连接失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。. → 降级运行(缓存功能禁用)
+2026-06-10 15:28:00,422 - agent - WARNING - metrics.py:21 - [Metrics] Redis 不可用, 统计数据仅保存在内存中

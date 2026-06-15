@@ -1,0 +1,46 @@
+2026-05-25 11:54:07,500 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-25 11:54:07,501 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你和)
+2026-05-25 11:54:07,928 - agent - ERROR - api_server.py:130 - [聊天接口]处理请求失败: request_id: ee7fcdca-3ad2-9e98-acdd-e14e22b6fdc3 
+ status_code: 400 
+ code: Arrearage 
+ message: Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment
+2026-05-25 11:56:04,807 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-25 11:56:04,808 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |string)
+2026-05-25 11:56:41,271 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-25 11:56:41,271 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |string)
+2026-05-25 11:56:42,222 - agent - ERROR - api_server.py:130 - [聊天接口]处理请求失败: request_id: 97f235ba-d320-9f8c-bea2-11fe32ff4802 
+ status_code: 400 
+ code: Arrearage 
+ message: Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment
+2026-05-25 11:57:00,311 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-25 11:57:00,311 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |string)
+2026-05-25 11:57:01,038 - agent - ERROR - api_server.py:130 - [聊天接口]处理请求失败: request_id: 06588e56-76de-95c0-b7bf-f69f221a4fc5 
+ status_code: 400 
+ code: Arrearage 
+ message: Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment
+2026-05-25 11:57:40,286 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-25 11:57:40,287 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你好)
+2026-05-25 11:57:40,904 - agent - ERROR - api_server.py:130 - [聊天接口]处理请求失败: request_id: 03884f56-7446-970c-9dbf-f092990af2be 
+ status_code: 400 
+ code: Arrearage 
+ message: Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment
+2026-05-25 13:08:18,452 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-25 13:08:18,455 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你好)
+2026-05-25 13:08:19,263 - agent - ERROR - api_server.py:130 - [聊天接口]处理请求失败: request_id: f6982471-d107-9c0d-8aab-60c4b61fcedd 
+ status_code: 400 
+ code: Arrearage 
+ message: Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment
+2026-05-25 13:08:31,677 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-25 13:08:31,678 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |.)
+2026-05-25 13:08:32,453 - agent - ERROR - api_server.py:130 - [聊天接口]处理请求失败: request_id: 644fdfc1-edaa-99eb-b1bf-dd72d31597f5 
+ status_code: 400 
+ code: Arrearage 
+ message: Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment
+2026-05-25 13:08:43,997 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-25 13:08:43,997 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你好)
+2026-05-25 13:08:44,737 - agent - ERROR - api_server.py:130 - [聊天接口]处理请求失败: request_id: e5143261-cfec-96c3-a4ae-9e1ebb06527a 
+ status_code: 400 
+ code: Arrearage 
+ message: Access denied, please make sure your account is in good standing. For details, see: https://help.aliyun.com/zh/model-studio/error-code#overdue-payment
+2026-05-25 13:14:45,599 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-25 13:14:45,600 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你好)

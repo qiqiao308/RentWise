@@ -1,0 +1,44 @@
+2026-05-21 17:17:18,051 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-21 17:17:18,053 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你好)
+2026-05-21 17:30:00,151 - agent - INFO - api_server.py:206 - [文件上传]文件已保存: F:\gao\gongyu\gongyuzuping\agent_project\uploads\salary.txt
+2026-05-21 17:30:00,155 - agent - INFO - api_server.py:215 - [文件上传]文件已复制到data目录: F:\gao\gongyu\gongyuzuping\agent_project\data\salary.txt
+2026-05-21 17:30:00,155 - agent - INFO - api_server.py:218 - [文件上传]开始加载文件到知识库: salary.txt
+2026-05-21 17:30:01,574 - agent - INFO - vector_store.py:99 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\salary.txt内容加载完成
+2026-05-21 17:30:01,585 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\test_upload.txt内容已经存在知识库,跳过
+2026-05-21 17:30:01,589 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\扫地机器人100问.pdf内容已经存在知识库,跳过
+2026-05-21 17:30:01,591 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\扫地机器人100问2.txt内容已经存在知识库,跳过
+2026-05-21 17:30:01,593 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\扫拖一体机器人100问.txt内容已经存在知识库,跳过
+2026-05-21 17:30:01,595 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\故障排除.txt内容已经存在知识库,跳过
+2026-05-21 17:30:01,596 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\租房常见问题.txt内容已经存在知识库,跳过
+2026-05-21 17:30:01,598 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\维护保养.txt内容已经存在知识库,跳过
+2026-05-21 17:30:01,600 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\选购指南.txt内容已经存在知识库,跳过
+2026-05-21 17:34:09,388 - agent - INFO - api_server.py:206 - [文件上传]文件已保存: F:\gao\gongyu\gongyuzuping\agent_project\uploads\salary.txt
+2026-05-21 17:34:09,390 - agent - INFO - api_server.py:215 - [文件上传]文件已复制到data目录: F:\gao\gongyu\gongyuzuping\agent_project\data\salary.txt
+2026-05-21 17:34:09,390 - agent - INFO - api_server.py:218 - [文件上传]开始加载文件到知识库: salary.txt
+2026-05-21 17:34:09,392 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\salary.txt内容已经存在知识库,跳过
+2026-05-21 17:34:09,395 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\test_upload.txt内容已经存在知识库,跳过
+2026-05-21 17:34:09,398 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\扫地机器人100问.pdf内容已经存在知识库,跳过
+2026-05-21 17:34:09,399 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\扫地机器人100问2.txt内容已经存在知识库,跳过
+2026-05-21 17:34:09,401 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\扫拖一体机器人100问.txt内容已经存在知识库,跳过
+2026-05-21 17:34:09,402 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\故障排除.txt内容已经存在知识库,跳过
+2026-05-21 17:34:09,403 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\租房常见问题.txt内容已经存在知识库,跳过
+2026-05-21 17:34:09,405 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\维护保养.txt内容已经存在知识库,跳过
+2026-05-21 17:34:09,407 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\选购指南.txt内容已经存在知识库,跳过
+2026-05-21 17:35:09,109 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-21 17:35:09,110 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |都有什么部门)
+2026-05-21 17:35:34,550 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-21 17:35:34,552 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你可以干嘛)
+2026-05-21 17:37:21,135 - agent - INFO - api_server.py:206 - [文件上传]文件已保存: F:\gao\gongyu\gongyuzuping\agent_project\uploads\salary.txt
+2026-05-21 17:37:21,138 - agent - INFO - api_server.py:215 - [文件上传]文件已复制到data目录: F:\gao\gongyu\gongyuzuping\agent_project\data\salary.txt
+2026-05-21 17:37:21,140 - agent - INFO - api_server.py:218 - [文件上传]开始加载文件到知识库: salary.txt
+2026-05-21 17:37:21,143 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\salary.txt内容已经存在知识库,跳过
+2026-05-21 17:37:21,144 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\test_upload.txt内容已经存在知识库,跳过
+2026-05-21 17:37:21,146 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\扫地机器人100问.pdf内容已经存在知识库,跳过
+2026-05-21 17:37:21,148 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\扫地机器人100问2.txt内容已经存在知识库,跳过
+2026-05-21 17:37:21,148 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\扫拖一体机器人100问.txt内容已经存在知识库,跳过
+2026-05-21 17:37:21,149 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\故障排除.txt内容已经存在知识库,跳过
+2026-05-21 17:37:21,150 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\租房常见问题.txt内容已经存在知识库,跳过
+2026-05-21 17:37:21,151 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\维护保养.txt内容已经存在知识库,跳过
+2026-05-21 17:37:21,151 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\选购指南.txt内容已经存在知识库,跳过
+2026-05-21 17:37:35,100 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-21 17:37:35,100 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |帮我统计人数)

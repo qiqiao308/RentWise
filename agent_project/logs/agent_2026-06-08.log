@@ -1,0 +1,15 @@
+2026-06-08 11:09:54,045 - agent - INFO - redis_handler.py:28 - [Redis] 连接成功
+2026-06-08 11:10:10,943 - agent - INFO - redis_handler.py:28 - [Redis] 连接成功
+2026-06-08 11:11:46,361 - agent - INFO - redis_handler.py:28 - [Redis] 连接成功
+2026-06-08 11:12:08,892 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-08 11:12:08,892 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你好)
+2026-06-08 11:12:10,337 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-08 11:12:28,590 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-08 11:12:28,591 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |合同签约)
+2026-06-08 11:12:29,906 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-06-08 11:12:29,907 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '合同签约'} 
+2026-06-08 11:12:35,427 - agent - INFO - rag_service.py:64 - [RAG缓存] 结果已缓存, TTL=3600s: 合同签约
+2026-06-08 11:12:35,430 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-06-08 11:12:35,432 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-08 11:12:35,432 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |合同签约时需注意：明确租金、押金（通常1-3个月）、支付方式、物业费/网费/水电费承担方、维修责任划分、提前解约条件、转租权限及违约赔偿标准；警惕押金不退的灰色条款、“租金贷”或隐形分期付款、模糊的维修责任条款；确保合同盖章并核实房东身份（核对身份证与房产证，若为二房东需查验原合同中的转租许可）；保留付款凭证、聊天记录、照片视频等证据。)
+2026-06-08 11:12:42,751 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s

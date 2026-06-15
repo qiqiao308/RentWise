@@ -1,0 +1,531 @@
+2026-05-17 14:04:40,473 - agent - INFO - logger_handler.py:50 - 信息日志
+2026-05-17 14:04:40,474 - agent - ERROR - logger_handler.py:51 - 错误日志
+2026-05-17 14:04:40,474 - agent - WARNING - logger_handler.py:52 - 警告日志
+2026-05-17 14:04:40,474 - agent - DEBUG - logger_handler.py:53 - 调试日志
+2026-05-17 15:03:43,001 - agent - ERROR - prompt_looader.py:29 - load_rag_prompts] 解析RAG提示词出错: [Errno 2] No such file or directory: 'F:\\agent\\Python\\ai\\agent项目\\prompts/rag_summary.txt'
+2026-05-17 15:04:35,388 - agent - ERROR - prompt_looader.py:29 - load_rag_prompts] 解析RAG提示词出错: [Errno 2] No such file or directory: 'F:\\agent\\Python\\ai\\agent项目\\prompts/rag_summary.txt'
+2026-05-17 16:03:01,848 - agent - ERROR - file_handler.py:36 - [listdir_with_allowed_type] data 不是文件夹
+2026-05-17 16:03:01,849 - agent - ERROR - file_handler.py:10 - [md5计算]文件 pdf不存在
+2026-05-17 16:03:01,849 - agent - ERROR - vector.store.py:102 - [加载知识库]pdf内容加载失败: File path pdf is not a valid file or url
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 62, in get_file_documents
+    return pdf_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath,passwd).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 281, in __init__
+    super().__init__(file_path, headers=headers)
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 140, in __init__
+    raise ValueError("File path %s is not a valid file or url" % self.file_path)
+ValueError: File path pdf is not a valid file or url
+2026-05-17 16:03:01,851 - agent - ERROR - file_handler.py:10 - [md5计算]文件 txt不存在
+2026-05-17 16:03:01,851 - agent - ERROR - vector.store.py:102 - [加载知识库]txt内容加载失败: Error loading txt
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 42, in lazy_load
+    with open(self.file_path, encoding=self.encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'txt'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 59, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 58, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading txt
+2026-05-17 16:04:10,145 - agent - ERROR - file_handler.py:36 - [listdir_with_allowed_type] F:\agent\Python\ai\agent项目\data 不是文件夹
+2026-05-17 16:04:10,145 - agent - ERROR - file_handler.py:10 - [md5计算]文件 pdf不存在
+2026-05-17 16:04:10,145 - agent - ERROR - vector.store.py:102 - [加载知识库]pdf内容加载失败: File path pdf is not a valid file or url
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 62, in get_file_documents
+    return pdf_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath,passwd).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 281, in __init__
+    super().__init__(file_path, headers=headers)
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 140, in __init__
+    raise ValueError("File path %s is not a valid file or url" % self.file_path)
+ValueError: File path pdf is not a valid file or url
+2026-05-17 16:04:10,147 - agent - ERROR - file_handler.py:10 - [md5计算]文件 txt不存在
+2026-05-17 16:04:10,147 - agent - ERROR - vector.store.py:102 - [加载知识库]txt内容加载失败: Error loading txt
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 42, in lazy_load
+    with open(self.file_path, encoding=self.encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'txt'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 59, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 58, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading txt
+2026-05-17 16:05:35,295 - agent - ERROR - file_handler.py:36 - [listdir_with_allowed_type] data 不是文件夹
+2026-05-17 16:05:35,295 - agent - ERROR - file_handler.py:10 - [md5计算]文件 pdf不存在
+2026-05-17 16:05:35,296 - agent - ERROR - vector.store.py:102 - [加载知识库]pdf内容加载失败: File path pdf is not a valid file or url
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 62, in get_file_documents
+    return pdf_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath,passwd).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 281, in __init__
+    super().__init__(file_path, headers=headers)
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 140, in __init__
+    raise ValueError("File path %s is not a valid file or url" % self.file_path)
+ValueError: File path pdf is not a valid file or url
+2026-05-17 16:05:35,296 - agent - ERROR - file_handler.py:10 - [md5计算]文件 txt不存在
+2026-05-17 16:05:35,297 - agent - ERROR - vector.store.py:102 - [加载知识库]txt内容加载失败: Error loading txt
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 42, in lazy_load
+    with open(self.file_path, encoding=self.encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'txt'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 59, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 58, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading txt
+2026-05-17 16:06:00,684 - agent - ERROR - file_handler.py:36 - [listdir_with_allowed_type] F:\agent\Python\ai\agent项目\data 不是文件夹
+2026-05-17 16:06:00,684 - agent - ERROR - file_handler.py:10 - [md5计算]文件 pdf不存在
+2026-05-17 16:06:00,685 - agent - ERROR - vector.store.py:102 - [加载知识库]pdf内容加载失败: File path pdf is not a valid file or url
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 62, in get_file_documents
+    return pdf_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath,passwd).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 281, in __init__
+    super().__init__(file_path, headers=headers)
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 140, in __init__
+    raise ValueError("File path %s is not a valid file or url" % self.file_path)
+ValueError: File path pdf is not a valid file or url
+2026-05-17 16:06:00,686 - agent - ERROR - file_handler.py:10 - [md5计算]文件 txt不存在
+2026-05-17 16:06:00,686 - agent - ERROR - vector.store.py:102 - [加载知识库]txt内容加载失败: Error loading txt
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 42, in lazy_load
+    with open(self.file_path, encoding=self.encoding) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'txt'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 59, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 58, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading txt
+2026-05-17 16:07:32,283 - agent - ERROR - vector.store.py:102 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫地机器人100问.pdf内容加载失败: `pypdf` package not found, please install it with `pip install pypdf`
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 359, in lazy_parse
+    import pypdf
+ModuleNotFoundError: No module named 'pypdf'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 62, in get_file_documents
+    return pdf_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath,passwd).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 305, in lazy_load
+    yield from self.parser.lazy_parse(blob)
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 361, in lazy_parse
+    raise ImportError(
+ImportError: `pypdf` package not found, please install it with `pip install pypdf`
+2026-05-17 16:07:32,285 - agent - ERROR - vector.store.py:102 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫地机器人100问2.txt内容加载失败: Error loading F:\agent\Python\ai\agent项目\data\扫地机器人100问2.txt
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 4: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 59, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading F:\agent\Python\ai\agent项目\data\扫地机器人100问2.txt
+2026-05-17 16:07:32,286 - agent - ERROR - vector.store.py:102 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫拖一体机器人100问.txt内容加载失败: Error loading F:\agent\Python\ai\agent项目\data\扫拖一体机器人100问.txt
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 4: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 59, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading F:\agent\Python\ai\agent项目\data\扫拖一体机器人100问.txt
+2026-05-17 16:07:32,288 - agent - ERROR - vector.store.py:102 - [加载知识库]F:\agent\Python\ai\agent项目\data\故障排除.txt内容加载失败: Error loading F:\agent\Python\ai\agent项目\data\故障排除.txt
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 2: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 59, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading F:\agent\Python\ai\agent项目\data\故障排除.txt
+2026-05-17 16:07:32,289 - agent - ERROR - vector.store.py:102 - [加载知识库]F:\agent\Python\ai\agent项目\data\维护保养.txt内容加载失败: Error loading F:\agent\Python\ai\agent项目\data\维护保养.txt
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 4: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 59, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading F:\agent\Python\ai\agent项目\data\维护保养.txt
+2026-05-17 16:07:32,289 - agent - ERROR - vector.store.py:102 - [加载知识库]F:\agent\Python\ai\agent项目\data\选购指南.txt内容加载失败: Error loading F:\agent\Python\ai\agent项目\data\选购指南.txt
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 43, in lazy_load
+    text = f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xab in position 2: illegal multibyte sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 59, in get_file_documents
+    return txt_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 51, in txt_loader
+    return TextLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\text.py", line 56, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading F:\agent\Python\ai\agent项目\data\选购指南.txt
+2026-05-17 16:09:57,132 - agent - ERROR - vector.store.py:102 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫地机器人100问.pdf内容加载失败: `pypdf` package not found, please install it with `pip install pypdf`
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 359, in lazy_parse
+    import pypdf
+ModuleNotFoundError: No module named 'pypdf'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 80, in load_documents
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\rag\vector.store.py", line 62, in get_file_documents
+    return pdf_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\agent项目\utils\file_handler.py", line 46, in pdf_loader
+    return PyPDFLoader(filepath,passwd).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 305, in lazy_load
+    yield from self.parser.lazy_parse(blob)
+  File "F:\agent\Python\ai\.venv\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 361, in lazy_parse
+    raise ImportError(
+ImportError: `pypdf` package not found, please install it with `pip install pypdf`
+2026-05-17 16:10:01,418 - agent - INFO - vector.store.py:99 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫地机器人100问2.txt内容加载完成
+2026-05-17 16:10:06,211 - agent - INFO - vector.store.py:99 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫拖一体机器人100问.txt内容加载完成
+2026-05-17 16:10:16,041 - agent - INFO - vector.store.py:99 - [加载知识库]F:\agent\Python\ai\agent项目\data\故障排除.txt内容加载完成
+2026-05-17 16:10:20,871 - agent - INFO - vector.store.py:99 - [加载知识库]F:\agent\Python\ai\agent项目\data\维护保养.txt内容加载完成
+2026-05-17 16:10:36,535 - agent - INFO - vector.store.py:99 - [加载知识库]F:\agent\Python\ai\agent项目\data\选购指南.txt内容加载完成
+2026-05-17 16:11:29,982 - agent - INFO - vector.store.py:99 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫地机器人100问.pdf内容加载完成
+2026-05-17 16:11:29,982 - agent - INFO - vector.store.py:76 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫地机器人100问2.txt内容已经存在知识库,跳过
+2026-05-17 16:11:29,982 - agent - INFO - vector.store.py:76 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫拖一体机器人100问.txt内容已经存在知识库,跳过
+2026-05-17 16:11:29,982 - agent - INFO - vector.store.py:76 - [加载知识库]F:\agent\Python\ai\agent项目\data\故障排除.txt内容已经存在知识库,跳过
+2026-05-17 16:11:29,983 - agent - INFO - vector.store.py:76 - [加载知识库]F:\agent\Python\ai\agent项目\data\维护保养.txt内容已经存在知识库,跳过
+2026-05-17 16:11:29,983 - agent - INFO - vector.store.py:76 - [加载知识库]F:\agent\Python\ai\agent项目\data\选购指南.txt内容已经存在知识库,跳过
+2026-05-17 16:13:23,815 - agent - INFO - vector.store.py:76 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫地机器人100问.pdf内容已经存在知识库,跳过
+2026-05-17 16:13:23,815 - agent - INFO - vector.store.py:76 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫地机器人100问2.txt内容已经存在知识库,跳过
+2026-05-17 16:13:23,815 - agent - INFO - vector.store.py:76 - [加载知识库]F:\agent\Python\ai\agent项目\data\扫拖一体机器人100问.txt内容已经存在知识库,跳过
+2026-05-17 16:13:23,816 - agent - INFO - vector.store.py:76 - [加载知识库]F:\agent\Python\ai\agent项目\data\故障排除.txt内容已经存在知识库,跳过
+2026-05-17 16:13:23,817 - agent - INFO - vector.store.py:76 - [加载知识库]F:\agent\Python\ai\agent项目\data\维护保养.txt内容已经存在知识库,跳过
+2026-05-17 16:13:23,817 - agent - INFO - vector.store.py:76 - [加载知识库]F:\agent\Python\ai\agent项目\data\选购指南.txt内容已经存在知识库,跳过
+2026-05-17 17:31:11,816 - agent - WARNING - agent_tools.py:81 - [fetch_external_data] 未找到用户 1001 的 1月 月数据
+2026-05-17 17:34:02,107 - agent - WARNING - agent_tools.py:84 - [fetch_external_data] 未找到用户 1001 的 1月 月数据
+2026-05-17 21:06:09,583 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-17 21:07:12,843 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-17 21:07:12,843 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |扫地机器人在我所在的地区如何保养)
+2026-05-17 21:07:26,925 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_user_location 
+2026-05-17 21:07:26,926 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {} 
+2026-05-17 21:07:26,926 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_user_location 调用成功 
+2026-05-17 21:07:26,928 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-05-17 21:07:26,928 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |北京)
+2026-05-17 21:07:30,006 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_weather 
+2026-05-17 21:07:30,006 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'city': '北京'} 
+2026-05-17 21:07:30,010 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_weather 调用成功 
+2026-05-17 21:07:30,012 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 5条信息 
+2026-05-17 21:07:30,012 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |城市北京天气为晴天,气温26摄氏度,空气湿度78%,南风1级)
+2026-05-17 21:07:33,643 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-05-17 21:07:33,643 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '扫地机器人在湿度较高且多尘环境中的保养方法'} 
+2026-05-17 21:07:38,832 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-05-17 21:07:38,834 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 7条信息 
+2026-05-17 21:07:38,834 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |在湿度较高且多尘环境中，应定期清理扫地机器人的尘盒、滤网和边刷，避免灰尘堆积影响性能；同时注意保持机身干燥，防止内部元件受潮损坏。)
+2026-05-17 21:12:04,860 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-17 21:12:04,860 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |给我生成我的使用报告)
+2026-05-17 21:12:18,308 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_user_id 
+2026-05-17 21:12:18,308 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {} 
+2026-05-17 21:12:18,311 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_user_id 调用成功 
+2026-05-17 21:12:18,313 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-05-17 21:12:18,313 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |1002)
+2026-05-17 21:12:20,346 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_current_month 
+2026-05-17 21:12:20,346 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {} 
+2026-05-17 21:12:20,350 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_current_month 调用成功 
+2026-05-17 21:12:20,352 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 5条信息 
+2026-05-17 21:12:20,353 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |2025-07)
+2026-05-17 21:12:22,201 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 fill_context_for_report 
+2026-05-17 21:12:22,202 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {} 
+2026-05-17 21:12:22,203 - agent - INFO - middleware.py:23 - [tool monitor]工具 fill_context_for_report 调用成功 
+2026-05-17 21:12:22,205 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 7条信息 
+2026-05-17 21:12:22,206 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |fill_context_for_report已调用)
+2026-05-17 21:12:24,950 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 fetch_external_data 
+2026-05-17 21:12:24,950 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'user_id': '1002', 'month': '2025-07'} 
+2026-05-17 21:12:24,952 - agent - INFO - middleware.py:23 - [tool monitor]工具 fetch_external_data 调用成功 
+2026-05-17 21:12:24,954 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 9条信息 
+2026-05-17 21:12:24,954 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |{"features": "70㎡公寓 | 情侣 | 瓷砖", "efficiency": "覆盖率:87%\\n避障失败:3次/周（电线+拖鞋）", "consumabbles": "边刷磨损:中度+\\n尘盒清理:每2天", "comparison": "拖地功能使用率低于同类33%", "time": "2025-07"})
+2026-05-17 21:12:27,076 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-05-17 21:12:27,076 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '扫地机器人边刷磨损保养建议'} 
+2026-05-17 21:12:30,406 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-05-17 21:12:30,407 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 11条信息 
+2026-05-17 21:12:30,408 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |定期检查边刷磨损情况，若出现明显变形、断裂或清扫效果下降，应及时更换；建议每3-6个月更换一次边刷，具体视使用频率和地面状况而定；清洁时可用水冲洗并晾干，避免暴晒或高温烘干。)
+2026-05-17 21:12:32,844 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-05-17 21:12:32,845 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '扫地机器人拖地功能使用建议'} 
+2026-05-17 21:12:37,348 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-05-17 21:12:37,350 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 13条信息 
+2026-05-17 21:12:37,350 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |使用扫地机器人拖地功能前，应先清扫地面灰尘和碎屑，避免脏污被拖布反复摩擦；建议使用专用拖布并定期清洗；根据地面材质选择合适水量，木地板等怕水材质需调至低水量或干拖模式；拖地后及时清理拖布和水箱，防止异味和细菌滋生。)
+2026-05-17 21:12:40,078 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-05-17 21:12:40,084 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '扫地机器人避障失败常见原因及解决方案'} 
+2026-05-17 21:12:46,850 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-05-17 21:12:46,851 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 15条信息 
+2026-05-17 21:12:46,851 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |扫地机器人避障失败的常见原因包括传感器脏污、算法识别能力有限、环境光线过强或过暗、障碍物过于低矮或透明（如玻璃、电线），以及软件未及时更新。解决方案包括定期清洁传感器、确保固件为最新版本、避免在极端光照环境下使用、人工清理地面细小或透明障碍物，以及选择具备多传感器融合和先进避障算法的机型。)
+2026-05-17 21:46:21,236 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-17 21:46:21,236 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |在我当前所在的位置天气下,我如何保养机器人)
+2026-05-17 21:46:34,969 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_user_location 
+2026-05-17 21:46:34,971 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {} 
+2026-05-17 21:46:34,975 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_user_location 调用成功 
+2026-05-17 21:46:34,979 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-05-17 21:46:34,982 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |杭州)
+2026-05-17 21:46:37,763 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_weather 
+2026-05-17 21:46:37,766 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'city': '杭州'} 
+2026-05-17 21:46:37,769 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_weather 调用成功 
+2026-05-17 21:46:37,776 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 5条信息 
+2026-05-17 21:46:37,778 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |城市杭州天气为晴天,气温26摄氏度,空气湿度78%,南风1级)
+2026-05-17 21:46:41,324 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-05-17 21:46:41,325 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '高湿度环境下扫地机器人保养方法'} 
+2026-05-17 21:46:45,194 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-05-17 21:46:45,198 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 7条信息 
+2026-05-17 21:46:45,200 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |在高湿度环境下，应将扫地机器人存放在干燥通风处，避免电池受潮；定期清理尘盒、滤网和滚刷，防止霉菌滋生；使用后及时擦干机身表面水分，并确保充电座远离潮湿区域。)
+2026-05-17 21:47:41,066 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-17 21:47:41,068 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |.)
+2026-05-17 21:48:50,165 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-17 21:48:50,166 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |在我当前位置天气下,机器人如何保养)
+2026-05-17 21:48:52,559 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_user_location 
+2026-05-17 21:48:52,560 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {} 
+2026-05-17 21:48:52,561 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_user_location 调用成功 
+2026-05-17 21:48:52,564 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-05-17 21:48:52,564 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |北京)
+2026-05-17 21:48:55,430 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_weather 
+2026-05-17 21:48:55,430 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'city': '北京'} 
+2026-05-17 21:48:55,431 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_weather 调用成功 
+2026-05-17 21:48:55,435 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 5条信息 
+2026-05-17 21:48:55,436 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |城市北京天气为晴天,气温26摄氏度,空气湿度78%,南风1级)
+2026-05-17 21:49:00,035 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-05-17 21:49:00,036 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '高湿度环境下扫地机器人保养方法'} 
+2026-05-17 21:49:03,559 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-05-17 21:49:03,562 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 7条信息 
+2026-05-17 21:49:03,563 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |在高湿度环境下，应定期清理扫地机器人的尘盒、滤网和滚刷，保持机身干燥；避免长时间放置在潮湿地面，充电时确保底座干燥；必要时使用干燥剂或除湿设备降低存放环境湿度。)
+2026-05-17 21:51:06,345 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-17 21:51:06,345 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |在我当前位置天气下,机器人如何保养)
+2026-05-17 21:51:20,434 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_user_location 
+2026-05-17 21:51:20,435 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {} 
+2026-05-17 21:51:20,437 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_user_location 调用成功 
+2026-05-17 21:51:20,473 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-05-17 21:51:20,475 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |杭州)
+2026-05-17 21:51:25,090 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_weather 
+2026-05-17 21:51:25,091 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'city': '杭州'} 
+2026-05-17 21:51:25,093 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_weather 调用成功 
+2026-05-17 21:51:25,435 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 5条信息 
+2026-05-17 21:51:25,437 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |城市杭州天气为晴天,气温26摄氏度,空气湿度78%,南风1级)
+2026-05-17 21:51:39,968 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-05-17 21:51:39,968 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '高湿度环境下扫地机器人保养方法'} 
+2026-05-17 21:51:43,885 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-05-17 21:51:44,849 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 7条信息 
+2026-05-17 21:51:44,850 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |在高湿度环境下，应定期清理扫地机器人的尘盒、滤网和滚刷，保持机身干燥；避免长时间放置在潮湿地面，充电时确保底座干燥；必要时使用除湿设备降低环境湿度，以防内部元件受潮损坏。)
+2026-05-17 21:52:06,664 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-17 21:52:06,664 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |帮我生成使用报告)
+2026-05-17 21:52:20,199 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_user_id 
+2026-05-17 21:52:20,199 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {} 
+2026-05-17 21:52:20,201 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_user_id 调用成功 
+2026-05-17 21:52:20,224 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-05-17 21:52:20,224 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |8)
+2026-05-17 21:52:23,342 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_current_month 
+2026-05-17 21:52:23,343 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {} 
+2026-05-17 21:52:23,346 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_current_month 调用成功 
+2026-05-17 21:52:23,436 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 5条信息 
+2026-05-17 21:52:23,437 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |2025-11)
+2026-05-17 21:52:27,124 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 fill_context_for_report 
+2026-05-17 21:52:27,125 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {} 
+2026-05-17 21:52:27,127 - agent - INFO - middleware.py:23 - [tool monitor]工具 fill_context_for_report 调用成功 
+2026-05-17 21:52:27,432 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 7条信息 
+2026-05-17 21:52:27,432 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |fill_context_for_report已调用)
+2026-05-17 21:52:30,822 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 fetch_external_data 
+2026-05-17 21:52:30,823 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'user_id': '8', 'month': '2025-11'} 
+2026-05-17 21:52:30,827 - agent - WARNING - agent_tools.py:84 - [fetch_external_data] 未找到用户 8 的 2025-11 月数据
+2026-05-17 21:52:30,828 - agent - INFO - middleware.py:23 - [tool monitor]工具 fetch_external_data 调用成功 
+2026-05-17 21:52:30,829 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 9条信息 
+2026-05-17 21:52:30,830 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |)
+2026-05-17 21:52:34,978 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-05-17 21:52:34,979 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '扫地机器人日常使用与保养建议'} 
+2026-05-17 21:52:50,229 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-05-17 21:52:51,334 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 11条信息 
+2026-05-17 21:52:51,337 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |日常使用扫地机器人时，应定期清理尘盒、滤网和滚刷，避免毛发缠绕；使用后及时充电并保持传感器清洁；避免在潮湿或有液体的地面上运行；定期检查边刷和主刷磨损情况并更换；长时间不用时应断电存放于干燥处。)
+2026-05-17 21:56:15,979 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-17 21:56:15,982 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |在我当前位置天气下,机器人如何保养)
+2026-05-17 21:56:18,979 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_user_location 
+2026-05-17 21:56:18,980 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {} 
+2026-05-17 21:56:18,980 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_user_location 调用成功 
+2026-05-17 21:56:19,018 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-05-17 21:56:19,019 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |广州)
+2026-05-17 21:56:22,053 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 get_weather 
+2026-05-17 21:56:22,054 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'city': '广州'} 
+2026-05-17 21:56:22,055 - agent - INFO - middleware.py:23 - [tool monitor]工具 get_weather 调用成功 
+2026-05-17 21:56:22,423 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 5条信息 
+2026-05-17 21:56:22,424 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |城市广州天气为晴天,气温26摄氏度,空气湿度78%,南风1级)
+2026-05-17 21:56:27,015 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-05-17 21:56:27,016 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '高湿度环境下扫地机器人保养方法'} 
+2026-05-17 21:56:30,203 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-05-17 21:56:31,125 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 7条信息 
+2026-05-17 21:56:31,126 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |在高湿度环境下，应将扫地机器人存放在干燥通风处，避免电池受潮；定期清理尘盒、滤网和滚刷，防止霉菌滋生；使用后及时擦干机身表面水分，并确保充电座远离潮湿区域。)

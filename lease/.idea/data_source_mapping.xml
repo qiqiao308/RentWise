@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/67a1af66-2adb-4bf7-aeb4-0b9a4227fb6d/console.sql" value="67a1af66-2adb-4bf7-aeb4-0b9a4227fb6d" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/67a1af66-2adb-4bf7-aeb4-0b9a4227fb6d/tempfile_1778476232625.ts" value="67a1af66-2adb-4bf7-aeb4-0b9a4227fb6d" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/67a1af66-2adb-4bf7-aeb4-0b9a4227fb6d/tempfile_1778476240294.ts" value="67a1af66-2adb-4bf7-aeb4-0b9a4227fb6d" />
+    <file url="file://$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/ApartmentInfoMapper.xml" value="67a1af66-2adb-4bf7-aeb4-0b9a4227fb6d" />
+    <file url="file://$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/AttrKeyMapper.xml" value="67a1af66-2adb-4bf7-aeb4-0b9a4227fb6d" />
+    <file url="file://$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/FeeKeyMapper.xml" value="67a1af66-2adb-4bf7-aeb4-0b9a4227fb6d" />
+    <file url="file://$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/FeeValueMapper.xml" value="67a1af66-2adb-4bf7-aeb4-0b9a4227fb6d" />
+  </component>
+</project>

@@ -1,0 +1,110 @@
+2026-06-07 15:32:19,302 - agent - ERROR - redis_handler.py:30 - [Redis] 连接失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2026-06-07 15:33:28,925 - agent - ERROR - redis_handler.py:30 - [Redis] 连接失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2026-06-07 15:36:16,734 - agent - ERROR - api_server.py:156 - [聊天接口]处理请求失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2026-06-07 15:37:11,087 - agent - ERROR - api_server.py:156 - [聊天接口]处理请求失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2026-06-07 15:42:43,416 - agent - ERROR - redis_handler.py:30 - [Redis] 连接失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2026-06-07 15:43:08,518 - agent - ERROR - api_server.py:156 - [聊天接口]处理请求失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2026-06-07 15:44:24,937 - agent - ERROR - api_server.py:156 - [聊天接口]处理请求失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+2026-06-07 15:45:22,922 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-07 15:45:22,923 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你好)
+2026-06-07 15:45:36,467 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-07 15:46:11,886 - agent - INFO - api_server.py:231 - [文件上传]文件已保存: F:\gao\gongyu\gongyuzuping\agent_project\uploads\文档.txt
+2026-06-07 15:46:11,899 - agent - INFO - api_server.py:240 - [文件上传]文件已复制到data目录: F:\gao\gongyu\gongyuzuping\agent_project\data\文档.txt
+2026-06-07 15:46:11,902 - agent - INFO - api_server.py:245 - [文件上传]开始加载文件到知识库: 文档.txt
+2026-06-07 15:46:11,924 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\salary.txt内容已经存在知识库,跳过
+2026-06-07 15:46:11,926 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\test_upload.txt内容已经存在知识库,跳过
+2026-06-07 15:46:14,997 - agent - INFO - vector_store.py:99 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\文档.txt内容加载完成
+2026-06-07 15:46:15,000 - agent - INFO - vector_store.py:76 - [加载知识库]F:\gao\gongyu\gongyuzuping\agent_project\data\租房常见问题.txt内容已经存在知识库,跳过
+2026-06-07 15:46:15,001 - agent - INFO - api_server.py:248 - [增量延迟] 文件=文档.txt | load_documents耗时=3.10s
+2026-06-07 15:46:15,042 - agent - INFO - redis_handler.py:62 - [Redis缓存] 已清除RAG缓存 0 条
+2026-06-07 15:46:15,048 - agent - INFO - redis_handler.py:70 - [Redis缓存] 已清除Agent回复缓存 1 条
+2026-06-07 15:46:15,049 - agent - INFO - api_server.py:255 - [文件上传] 已清除RAG和Agent回复缓存
+2026-06-07 15:48:14,918 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-07 15:48:14,918 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你好)
+2026-06-07 15:48:16,773 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-07 15:48:31,242 - agent - INFO - api_server.py:118 - [Agent缓存] 命中缓存: 你好...
+2026-06-07 15:48:39,120 - agent - INFO - api_server.py:118 - [Agent缓存] 命中缓存: 你好...
+2026-06-07 15:51:51,279 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-07 15:51:51,279 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |租房押金一般多少)
+2026-06-07 15:51:52,890 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-06-07 15:51:52,893 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '租房押金标准金额'} 
+2026-06-07 15:51:54,823 - agent - INFO - rag_service.py:64 - [RAG缓存] 结果已缓存, TTL=3600s: 租房押金标准金额
+2026-06-07 15:51:54,829 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-06-07 15:51:54,838 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-07 15:51:54,839 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |租房押金通常为1至3个月租金。)
+2026-06-07 15:51:59,331 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-07 15:52:07,988 - agent - INFO - api_server.py:118 - [Agent缓存] 命中缓存: 租房押金一般多少...
+2026-06-07 15:52:19,281 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-07 15:52:19,281 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |租房押金多少)
+2026-06-07 15:52:21,034 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-06-07 15:52:21,035 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '租房押金标准金额'} 
+2026-06-07 15:52:21,037 - agent - INFO - rag_service.py:40 - [RAG缓存] 命中缓存: 租房押金标准金额
+2026-06-07 15:52:21,037 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-06-07 15:52:21,039 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-07 15:52:21,039 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |租房押金通常为1至3个月租金。)
+2026-06-07 15:52:25,301 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-07 15:52:37,080 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-07 15:52:37,080 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |租房押金大概是多少)
+2026-06-07 15:52:38,648 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-06-07 15:52:38,648 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '租房押金标准金额'} 
+2026-06-07 15:52:38,651 - agent - INFO - rag_service.py:40 - [RAG缓存] 命中缓存: 租房押金标准金额
+2026-06-07 15:52:38,651 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-06-07 15:52:38,652 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-07 15:52:38,652 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |租房押金通常为1至3个月租金。)
+2026-06-07 15:52:42,598 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-07 15:52:55,457 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-07 15:52:55,458 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |租房押金是多少呢)
+2026-06-07 15:52:56,998 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-06-07 15:52:56,998 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '租房押金标准'} 
+2026-06-07 15:52:58,753 - agent - INFO - rag_service.py:64 - [RAG缓存] 结果已缓存, TTL=3600s: 租房押金标准
+2026-06-07 15:52:58,754 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-06-07 15:52:58,756 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-07 15:52:58,756 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |租房押金通常为1至3个月租金。)
+2026-06-07 15:53:04,360 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-07 16:01:53,715 - agent - INFO - redis_handler.py:28 - [Redis] 连接成功
+2026-06-07 16:01:58,262 - agent - INFO - api_server.py:118 - [Agent缓存] 命中缓存: 租房押金是多少呢...
+2026-06-07 16:02:17,068 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-07 16:02:17,068 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |租房押金大概会是多少)
+2026-06-07 16:02:18,445 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-06-07 16:02:18,445 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '租房押金标准金额'} 
+2026-06-07 16:02:18,449 - agent - INFO - rag_service.py:40 - [RAG缓存] 命中缓存: 租房押金标准金额
+2026-06-07 16:02:18,449 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-06-07 16:02:18,452 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-07 16:02:18,453 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |租房押金通常为1至3个月租金。)
+2026-06-07 16:02:23,922 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-07 16:02:39,036 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-07 16:02:39,036 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |租房押金应该是多少呢)
+2026-06-07 16:02:40,865 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-06-07 16:02:40,865 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '租房押金标准金额'} 
+2026-06-07 16:02:40,871 - agent - INFO - rag_service.py:40 - [RAG缓存] 命中缓存: 租房押金标准金额
+2026-06-07 16:02:40,872 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-06-07 16:02:40,874 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-07 16:02:40,875 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |租房押金通常为1至3个月租金。)
+2026-06-07 16:02:45,615 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-07 16:03:18,690 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-07 16:03:18,690 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |租房押金应该大概多少)
+2026-06-07 16:03:20,095 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-06-07 16:03:20,096 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '租房押金标准金额'} 
+2026-06-07 16:03:20,101 - agent - INFO - rag_service.py:40 - [RAG缓存] 命中缓存: 租房押金标准金额
+2026-06-07 16:03:20,101 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-06-07 16:03:20,104 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-07 16:03:20,105 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |租房押金通常为1至3个月租金。)
+2026-06-07 16:03:25,982 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-07 16:03:40,438 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-07 16:03:40,438 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |租房押金会多少)
+2026-06-07 16:03:41,995 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-06-07 16:03:41,996 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '租房押金标准金额'} 
+2026-06-07 16:03:41,998 - agent - INFO - rag_service.py:40 - [RAG缓存] 命中缓存: 租房押金标准金额
+2026-06-07 16:03:41,999 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-06-07 16:03:42,001 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-07 16:03:42,001 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |租房押金通常为1至3个月租金。)
+2026-06-07 16:03:47,447 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s
+2026-06-07 16:03:52,847 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-06-07 16:03:52,847 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |租房押金会是多少)
+2026-06-07 16:03:54,381 - agent - INFO - middleware.py:18 - [tool monitor]执行工具 rag_summarize 
+2026-06-07 16:03:54,381 - agent - INFO - middleware.py:19 - [tool monitor]执行工具 {'query': '租房押金标准金额'} 
+2026-06-07 16:03:54,384 - agent - INFO - rag_service.py:40 - [RAG缓存] 命中缓存: 租房押金标准金额
+2026-06-07 16:03:54,385 - agent - INFO - middleware.py:23 - [tool monitor]工具 rag_summarize 调用成功 
+2026-06-07 16:03:54,385 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 3条信息 
+2026-06-07 16:03:54,385 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] ToolMessage |租房押金通常为1至3个月租金。)
+2026-06-07 16:03:59,296 - agent - INFO - api_server.py:138 - [Agent缓存] 回复已缓存, TTL=1800s

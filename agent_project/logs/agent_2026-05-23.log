@@ -1,0 +1,6 @@
+2026-05-23 14:26:01,137 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-23 14:26:01,137 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你好)
+2026-05-23 14:51:02,675 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-23 14:51:02,677 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你好)
+2026-05-23 15:20:04,583 - agent - INFO - middleware.py:38 - [log_beefore_mode]即将调用模型 1条信息 
+2026-05-23 15:20:04,583 - agent - DEBUG - middleware.py:40 - [log_beefore_mode] HumanMessage |你好)
