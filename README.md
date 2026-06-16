@@ -1,6 +1,6 @@
 ﻿# 智能租房平台
 
-> 基于 Spring Boot + Vue 3 + Python AI 的全栈租房管理平台，集成 ReAct Agent 智能客服与 RAG 知识库问答系统。
+> 基于 Spring Boot + Vue 3 + Python AI 的全栈租房管理平台，基于LangChain集成 ReAct Agent 智能客服与 RAG 知识库问答系统。
 
 [![Vue](https://img.shields.io/badge/Vue-3.3-4FC08D?logo=vue.js)](https://vuejs.org/)
 [![Vite](https://img.shields.io/badge/Vite-4.3-646CFF?logo=vite)](https://vitejs.dev/)
